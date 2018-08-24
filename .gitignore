@@ -1,0 +1,17 @@
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+test/*
+!test/sample1_unittest.cc
+!test/CMakeLists.txt
+
+src/*
+!src/*.cc
+!src/CMakeLists.txt
+!src/*.h
