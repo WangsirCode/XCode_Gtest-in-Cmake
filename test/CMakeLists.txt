@@ -8,8 +8,8 @@ file(GLOB_RECURSE All_SOURCES  ${CMAKE_CURRENT_SOURCE_DIR}/*.cc ${CMAKE_CURRENT_
 add_executable(testMain ${All_SOURCES})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src)
-include_directories(/Users/bryant.wang/Code/googletest/googletest/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../googletest/include)
 
-target_link_libraries(testMain /Users/bryant.wang/Code/cmake_xcode_test/src/Debug/libtestlibrary.dylib)
+target_link_libraries(testMain ${CMAKE_CURRENT_SOURCE_DIR}/../product/Debug/libtestlibrary.dylib)
 target_link_libraries(testMain ${CMAKE_CURRENT_SOURCE_DIR}/../googletest/libgtest.a)
 target_link_libraries(testMain ${CMAKE_CURRENT_SOURCE_DIR}/../googletest//libgtest_main.a)
